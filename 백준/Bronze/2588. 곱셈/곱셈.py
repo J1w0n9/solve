@@ -1,0 +1,11 @@
+num1= int(input())
+num2= input()
+num2 = list(num2)
+n3 = num1 * int(num2[2])
+n4 = num1 * int(num2[1])
+n5 = num1 * int(num2[0])
+n6 = n3 + 10*n4 + 100*n5
+print(n3)
+print(n4)
+print(n5)
+print(n6)
