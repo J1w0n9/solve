@@ -6,7 +6,7 @@ int main() {
     int i;
     char c;
     scanf("%s", str);
-    for (i = 0; str[i] != '\0'; i++) {
+    for (i = 0; str[i] != '\0'; i++){
         c = str[i];
         if (c >= 'a' && c <= 'z') c = c - 'a' + 'A';
         f[c - 'A']++;
@@ -32,4 +32,5 @@ int main() {
         printf("%c\n", result);
     }
     return 0;
+
 }
