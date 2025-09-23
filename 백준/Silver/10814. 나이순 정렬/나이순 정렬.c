@@ -16,17 +16,18 @@ int compare(const void *a, const void *b){
     return m1->age - m2->age;
 }
 int main() {
-    int N;
-    scanf("%d", &N);
-    Member *arr = (Member *)malloc(sizeof(Member) * N);
-    for (int i = 0; i < N; i++){
+    int n;
+    scanf("%d", &n);
+    Member *arr = (Member *)malloc(sizeof(Member) * n);
+    for (int i = 0; i < n; i++){
         scanf("%d %s", &arr[i].age, arr[i].name);
         arr[i].index = i;
     }
-    qsort(arr, N, sizeof(Member), compare);
-    for (int i = 0; i < N; i++){
+    qsort(arr, n, sizeof(Member), compare);
+    for (int i = 0; i < n; i++){
         printf("%d %s\n", arr[i].age, arr[i].name);
     }
     free(arr);
     return 0;
+
 }
