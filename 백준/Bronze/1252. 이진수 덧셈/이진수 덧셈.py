@@ -1,0 +1,5 @@
+o, o2 = input().split()
+dem = int(o, 2)
+dem2 = int(o2, 2)
+b = format(dem+dem2, 'b')
+print(b)
